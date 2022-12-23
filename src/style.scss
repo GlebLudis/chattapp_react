@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.formContainer {
+    background : linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+.formWrapper{
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    form{
+        min-width: 600px;
+        padding: 10px;
+        display:flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo{
+        font-size: 8vh;
+        padding-bottom: 0;
+        font-family: 'Fredoka One', cursive;
+        margin: 6vh;
+    }
+
+    input{
+        border-radius: 20px;
+        padding: 2vh;
+        font-size: 40px;
+        text-align: center;
+    }
+    button{
+        font-size: 49px;
+        border-radius: 20px;
+    }
+}
+
+
+
