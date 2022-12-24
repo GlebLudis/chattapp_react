@@ -15,7 +15,7 @@ const Login = () => {
                     <Button variant="contained">Login</Button>
                 </form>
                 <p>
-                    You don't have an account? Login
+                    You don't have an account? Register
                 </p>
             </div>
         </div>

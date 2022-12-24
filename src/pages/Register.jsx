@@ -12,14 +12,14 @@ const Register = () => {
                 <form>
                     <TextField id="standard-basic" label="Nickname" variant="standard" />
                     <TextField id="standard-basic" label="Password" variant="standard" />
-                    <input required style={{ display: "none" }} type="file" id="file" />
-                    <label htmlFor="file">
-                        <span>Add an avatar</span>
-                    </label>
+                    <Button className="avatarButton" variant="contained" component="label">
+                        Upload Avatar
+                        <input hidden accept="image/*" multiple type="file" />
+                    </Button>
                     <Button variant="contained">Sign Up</Button>
                 </form>
                 <p>
-                    You do have an account?
+                    You do have an account? Login
                 </p>
             </div>
         </div>
