@@ -8,8 +8,8 @@ function Chat() {
       <div className="chatInfo">
         <span>Kariem</span>
       </div>
-        <Messages/>
-        <ChatInput/>
+      <Messages />
+      <ChatInput />
     </div>
   );
 }

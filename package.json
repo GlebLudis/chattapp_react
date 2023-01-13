@@ -7,7 +7,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "lint": "prettier --check . && eslint . --ext .js,.ts && tsc --noEmit",
+    "lint:fix": "prettier --write . && eslint . --fix --ext .js,.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -35,20 +37,18 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "react-scripts": "5.0.1",
-    "sass": "^1.54.8",
-    "uuid": "^8.3.2",
-    "web-vitals": "^2.1.4",
-    "gh-pages": "^4.0.0",
-    "sass": "^1.54.8",
-    "uuid": "^8.3.2",
-    "web-vitals": "^2.1.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0"
+    "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.8.2",
+    "react-scripts": "5.0.1",
+    "sass": "^1.54.8",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
   }
 }

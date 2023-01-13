@@ -6,8 +6,8 @@ function ChatBar() {
       <div className="userChat">
         <img src="" alt="" />
         <div className="userChatInfo">
-            <span>Jane</span>
-            <p>Heloo ooOOOO</p>
+          <span>Jane</span>
+          <p>Heloo ooOOOO</p>
         </div>
       </div>
     </div>
