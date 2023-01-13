@@ -2,7 +2,7 @@
   "name": "chattapp",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://glebludis.github.io/chattapp_react/",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -1,7 +1,13 @@
 import React, { useContext } from "react";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import {BrowserRouter, Routes, Route, Navigate, HashRouter} from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  HashRouter,
+} from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import Homepage from "./pages/Homepage";
 import "./style.scss";
