@@ -17,7 +17,7 @@ const Login = () => {
 
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            navigate("/login")
+            navigate("/")
         } catch (err) {
             setErr(true);
         }
@@ -32,8 +32,7 @@ const Login = () => {
                 <form onSubmit={handleSubmit}>
                     <TextField id="standard-basic" label="E-mail" variant="standard" />
                     <TextField id="standard-basic" label="Password" variant="standard" />
-                    <input required style={{ display: "none" }} type="file" id="file" />
-                    <Button variant="contained">Login</Button>
+                    <Button variant="contained" type="submit">Login</Button>
                     {err && <span>Something went wrong</span>}
                 </form>
                 <p>
