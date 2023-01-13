@@ -5,6 +5,7 @@ import { ChatContext } from "../context/ChatContext";
 function Message({ message }) {
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
+
   const ref = useRef();
 
   useEffect(() => {
@@ -19,7 +20,7 @@ function Message({ message }) {
       <div className="messageInfo">
         <img
           src={
-            message.senderId === currentUser.uuid
+            message.senderId === currentUser.uid
               ? currentUser.photoURL
               : data.user.photoURL
           }
@@ -28,7 +29,7 @@ function Message({ message }) {
         <span>just now</span>
       </div>
       <div className="messageContent">
-        <p className="bubble"> {message.text}</p>
+        <p>{message.text}</p>
         {message.img && <img src={message.img} alt="" />}
       </div>
     </div>
