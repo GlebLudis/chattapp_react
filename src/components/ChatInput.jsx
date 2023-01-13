@@ -24,12 +24,7 @@ const ChatInput = () => {
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
 
-
-
   const handleSend = async () => {
-
-
-
     if (img) {
       const storageRef = ref(storage, uuid());
 
@@ -62,7 +57,6 @@ const ChatInput = () => {
       });
     }
 
-
     await updateDoc(doc(db, "userChats", currentUser.uid), {
       [data.chatId + ".lastMessage"]: {
         text,
@@ -77,12 +71,9 @@ const ChatInput = () => {
       [data.chatId + ".date"]: serverTimestamp(),
     });
 
-
     setText("");
     setImg(null);
   };
-
-
 
   return (
     <div className="input">
@@ -91,7 +82,6 @@ const ChatInput = () => {
         placeholder="type something"
         onChange={(e) => setText(e.target.value)}
         value={text}
-
       />
       <div className="send">
         <div className="sendButton">
