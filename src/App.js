@@ -2,13 +2,7 @@ import React, { useContext } from "react";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import "./style.scss";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  HashRouter,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
 import Homepage from "./pages/Homepage";
 
@@ -24,7 +18,7 @@ function App() {
   };
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/">
           <Route
@@ -39,7 +33,7 @@ function App() {
           <Route path="register" element={<Register />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
