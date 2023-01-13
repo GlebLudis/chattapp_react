@@ -50,3 +50,4 @@ const ChatBar = () => {
 };
 
 export default ChatBar;
+
