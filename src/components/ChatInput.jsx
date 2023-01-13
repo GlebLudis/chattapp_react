@@ -91,7 +91,6 @@ const ChatInput = () => {
         placeholder="type something"
         onChange={(e) => setText(e.target.value)}
         value={text}
-        onKeyPress={handleSend}
 
       />
       <div className="send">
